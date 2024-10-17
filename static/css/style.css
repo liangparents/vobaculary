@@ -1,0 +1,81 @@
+body {
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    color: #4A90E2;
+}
+
+.instructions {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.question-section {
+    margin: 20px 0;
+}
+
+.options {
+    background-color: #E6F7FF;
+    border: 2px solid #4A90E2;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color: #4A90E2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #357ABD;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer button {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #7ED321;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer button:hover {
+    background-color: #5C9210;
+}
+button {
+    margin: 10px 0;  /* Adds vertical space between buttons */
+    padding: 10px 20px;  /* Adjust button size */
+    font-size: 16px;  /* Increase font size */
+}
+.submit-button {
+    margin-bottom: 20px;  /* More space below the Submit Answer button */
+}
+
+.report-button {
+    margin-top: 10px;  /* Adjust as needed */
+}
