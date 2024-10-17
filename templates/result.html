@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    {% if correct %}
+        <h1>Correct! Well done!</h1>
+    {% else %}
+        <h1>Incorrect. The correct answer is: {{ correct_answer }}</h1>
+        <p>Explanation: {{ explanation }}</p>
+    {% endif %}
+    <a href="/">Try another question</a>
+</body>
+</html>

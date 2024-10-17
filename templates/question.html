@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Question</title>
+    <link rel="stylesheet" href="style.css"> <!-- Include your CSS here -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏫 MiaoMiao's Vocabulary Challenge for GATE! A study game gift from Mummy Cat 🏆</h1>
+            <p class="instructions">Can you pick the right answer? Give it your best shot!</p>
+        </header>
+        <form method="POST">
+        <h2>Select Question Type</h2>
+        <select name="question_type" required>
+            <option value="Sentence_Completion">Sentence_Completion</option>
+            <option value="Verbal_Classification">Verbal_Classification</option>
+            <option value="Verbal_Analogies">Verbal_Analogies</option>
+        </select>
+        <div class="question-section">
+            <h2 class="question">{{ question }}</h2>
+            
+                <div class="options">
+                    <label><input type="radio" name="answer" value="A"> A: {{ option_A }}</label><br>
+                    <label><input type="radio" name="answer" value="B"> B: {{ option_B }}</label><br>
+                    <label><input type="radio" name="answer" value="C"> C: {{ option_C }}</label><br>
+                    <label><input type="radio" name="answer" value="D"> D: {{ option_D }}</label><br>
+                </div>
+                <div style="display: flex; width: 100%; justify-content: space-between; align-items: center;">
+                    <button type="submit">Submit Answer</button>
+                    <button class="report-button" onclick="location.href='/report'">Show Today's Report</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
